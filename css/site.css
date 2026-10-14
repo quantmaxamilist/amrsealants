@@ -88,6 +88,24 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);ba
 .wave{display:block;width:100%;height:auto;margin-bottom:-6px}
 .wave.top{transform:rotate(180deg)}
 
+/* full-bleed video hero */
+.vhero{position:relative;overflow:hidden;background:var(--maroon-d);display:flex;align-items:center;min-height:clamp(560px,88vh,840px)}
+.vhero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.vhero-ov{position:absolute;inset:0;z-index:1;background:
+  linear-gradient(118deg,rgba(60,18,27,.90) 0%,rgba(87,33,45,.74) 42%,rgba(31,58,80,.58) 100%),
+  linear-gradient(to bottom,rgba(20,34,46,.25),rgba(20,34,46,.0) 30%,rgba(255,255,255,0) 82%,rgba(255,255,255,.08) 100%)}
+.vhero-inner{position:relative;z-index:2;width:100%;padding:118px 24px 150px}
+.vhero-copy{max-width:720px}
+.vhero h1{color:#fff;font-size:clamp(2.5rem,5.6vw,4.2rem);font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.vhero h1 em{font-style:normal;color:var(--blue-l)}
+.vhero .sub{color:rgba(255,255,255,.92);font-size:1.2rem;margin:20px 0 30px;max-width:52ch;text-shadow:0 1px 14px rgba(0,0,0,.25)}
+.eyebrow.light{color:#dcecf8;color:#d6e9f7}
+.eyebrow.light::before{background:var(--blue-l)}
+.hero-trust.light{border-top-color:rgba(255,255,255,.22)}
+.hero-trust.light .t{color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.3)}
+.hero-trust.light svg{color:var(--blue-l)}
+.vhero .wave{position:absolute;left:0;right:0;bottom:0;width:100%;z-index:3;margin:0}
+
 /* 3 feature cards */
 .fcards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:-70px;position:relative;z-index:3}
 .fcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;box-shadow:var(--shadow-xs);transition:.2s}
